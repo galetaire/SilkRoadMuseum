@@ -156,6 +156,7 @@ tr:nth-child(even) {
   overflow-x: auto;
 }
 .container {
+    display: auto;
     flex-wrap: wrap;
 }
 
