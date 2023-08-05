@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: normal;
   font-family: "Helvetica", sans-serif;
   color: #005A0A;
@@ -15,30 +15,30 @@ html {
   left: 0px;
 }
 .header-right {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 0px;
-  float: right;    
+  float: right;
   font-weight: bold;
   position: absolute;
   top: 0px;
   right: 0px;
 }
 .footer-right {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 0px;
-  float: right;    
+  float: right;
   font-weight: bold;
 }
 .footer-left {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 0px;
-  float: left;    
+  float: left;
   font-weight: bold;
 }
 .header img {
-  float: left;  
+  max-width: 100%;
+  float: left;
   height: 100px;
-  width: auto;
 }
 .header-line {
   height: 2px;
@@ -55,13 +55,13 @@ html {
   display: flex;
 }
 h1 {
- float: left;    
+ float: left;
  margin: 0 0 0 0px;
  text-align: left;
 }
 
 h2 {
-  float: left;    
+  float: left;
   margin: 0 0 0 5px;
   text-align: left;
   font-size: 16px;
@@ -70,14 +70,17 @@ h2 {
 table {
   width: 85%;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 0.9em;
   font-weight: bold;
+  table-layout: auto;
 }
 th, td {
   border: 1px solid grey;
   padding: 8px;
   text-align: left;
   line-height: 8px;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 th {
   background-color: grey;
@@ -109,7 +112,7 @@ tr:nth-child(even) {
   background-color:;
 }
 .products {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 130%;
   font-weight: bold;
   float: left;
@@ -130,7 +133,7 @@ tr:nth-child(even) {
   background-color:;
 }
 .subproducts {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   color: #005A0A;
   justify-content: space-between;
@@ -146,4 +149,8 @@ tr:nth-child(even) {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+.table-container {
+  width: 85%;
+  overflow-x: auto;
 }
