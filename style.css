@@ -15,12 +15,13 @@ html {
   left: 0px;
 }
 .header-right {
+  display: flex;
   font-size: 1em;
-  margin-bottom: 0px;
+  margin-bottom: auto;
   float: right;
   font-weight: bold;
   position: absolute;
-  top: 0px;
+  top: 50px;
   right: 0px;
 }
 .footer-right {
@@ -78,7 +79,7 @@ th, td {
   border: 1px solid grey;
   padding: 8px;
   text-align: left;
-  line-height: 8px;
+  line-height: auto;
   word-wrap: break-word;
   max-width: 100%;
 }
